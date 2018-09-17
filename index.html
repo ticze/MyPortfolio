@@ -9,69 +9,99 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!--Let browser know website is optimized for mobile-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="index.css">
+    <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+  <link rel="stylesheet" href="style.css">
   <title>MyPotafolio</title>
 </head>
 
 <body>
-  <nav style="color: #AF3E52">
-    <div class="nav-wrapper">
-      <a href="#" class="brand-logo"></a>
-      <a href="#" data-target="mobile-nav" class="sidenav-trigger">
-        <i class="material-icons">menu</i>
-      </a>
-      <ul class="right hide-on-med-and-down">
-        <li>
-          <a href="#">SOBRE MÍ</a>
-        </li>
-        <li>
-          <a href="#">PROYECTOS</a>
-        </li>
-        <li>
-          <a href="#">SKILLS</a>
-        </li>
-        <li>
-          <a href="#">CONTACTO</a>
-        </li>
-      </ul>
-      <ul class="sidenav" id="mobile-nav">
-        <li>
-          <a href="#">SOBRE MÍ</a>
-        </li>
-        <li>
-          <a href="#">PROYECTOS</a>
-        </li>
-        <li>
-          <a href="#">SKILLS</a>
-        </li>
-        <li>
-          <a href="#">CONTACTO</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
+  <div class="navbar-fixed">
+    <nav style="color: #AF3E52">
+      <div class="nav-wrapper">
+        <a href="#" class="brand-logo"></a>
+        <a href="#" data-target="mobile-nav" class="sidenav-trigger">
+          <i class="material-icons">menu</i>
+        </a>
+        <ul class="left hide-on-med-and-down">
+          <li>
+            <a class="scrollTo" data-scrollTo = "about-me" href="#">SOBRE MÍ</a>
+          </li>
+          <li>
+            <a class="scrollTo" data-scrollTo = "projects" href="#">PROYECTOS</a>
+          </li>
+          <li>
+            <a class="scrollTo" data-scrollTo = "skills" href="#">SKILLS</a>
+          </li>
+          <li>
+            <a class="scrollTo" data-scrollTo = "contact" href="#">CONTACTO</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+              <ul class="sidenav" id="mobile-nav">
+                <li>
+                  <a class="scrollTo" data-scrollTo = "about-me" href="#">SOBRE MÍ</a>
+                </li>
+                <li>
+                  <a class="scrollTo" data-scrollTo = "projects" href="#">PROYECTOS</a>
+                </li>
+                <li>
+                  <a class="scrollTo" data-scrollTo = "skills" href="#">SKILLS</a>
+                </li>
+                <li>
+                  <a class="scrollTo" data-scrollTo = "contact" href="#">CONTACTO</a>
+                </li>
+              </ul>
 
-  <div class="container" >
-    <div class="row" id="img">
+  <div class="container main-container" >
+    <section id="about-me" class="portfolio-section">
+      <h2>sobre mi</h2>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt exercitationem, numquam aliquid, facere consectetur dignissimos eaque quod voluptas nisi voluptates libero? Cupiditate quibusdam reprehenderit repellendus voluptatibus, tempore possimus. Tenetur, consequuntur.
+      </p>
+    </section>
+    <section id="projects" class="portfolio-section">
+        <h2>proyectos</h2>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt exercitationem, numquam aliquid, facere consectetur dignissimos eaque quod voluptas nisi voluptates libero? Cupiditate quibusdam reprehenderit repellendus voluptatibus, tempore possimus. Tenetur, consequuntur.
+        </p>
+    </section>
+    <section id="skills" class="portfolio-section">
+        <h2>skills</h2>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt exercitationem, numquam aliquid, facere consectetur dignissimos eaque quod voluptas nisi voluptates libero? Cupiditate quibusdam reprehenderit repellendus voluptatibus, tempore possimus. Tenetur, consequuntur.
+        </p>
+    </section>
+    <section id="contact" class="portfolio-section">
+        <h2>contact</h2>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt exercitationem, numquam aliquid, facere consectetur dignissimos eaque quod voluptas nisi voluptates libero? Cupiditate quibusdam reprehenderit repellendus voluptatibus, tempore possimus. Tenetur, consequuntur.
+        </p>
+    </section>
+    <!-- <div class="row" id="img">
       <div class="col 16 m6 s12">
         <img src="./img/Leyla Ticze.JPG" alt="leyla" class="responsive-img">
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt exercitationem, numquam aliquid, facere consectetur dignissimos eaque quod voluptas nisi voluptates libero? Cupiditate quibusdam reprehenderit repellendus voluptatibus, tempore possimus. Tenetur, consequuntur.
+          </p>
       </div>
-    </div>
+    </div> -->
   </div>
 
-
+  <div class=space></div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <!-- Compiled and minified CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+
   <!-- Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+  <script src="main.js"></script>
   <script>
     $(document).ready(function () {
       $(".sidenav").sidenav();
     });
   </script>
-
 
 </body>
 

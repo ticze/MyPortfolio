@@ -1,0 +1,41 @@
+h2 {
+  margin: 0 0 30px;
+}
+
+.portfolio-section {
+  padding-top: 60px;
+  height: 100vh;
+}
+
+@media (min-width: 993px) {
+  .portfolio-section {
+    padding-top: 70px;
+  }
+   
+}
+
+#about-me {
+  background-color: aqua;
+}
+
+#skills {
+  background-color: pink;
+}
+
+#projects {
+  background-color: greenyellow;
+}
+
+#contact {
+  background-color: blueviolet;
+}
+
+/* this is just for a long scrollbar */
+div.space{
+  margin-bottom:700px
+}
+
+/* added 1/24/17 */
+.active{
+  font-weight: 700;
+}
