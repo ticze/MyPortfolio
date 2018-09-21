@@ -9,7 +9,7 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!--Let browser know website is optimized for mobile-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Compiled and minified CSS -->
+  <!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
   <link rel="stylesheet" href="style.css">
   <title>MyPotafolio</title>
@@ -17,7 +17,7 @@
 
 <body>
   <div class="navbar-fixed">
-    <nav style="color: #AF3E52">
+    <nav>
       <div class="nav-wrapper">
         <a href="#" class="brand-logo"></a>
         <a href="#" data-target="mobile-nav" class="sidenav-trigger">
@@ -25,83 +25,177 @@
         </a>
         <ul class="left hide-on-med-and-down">
           <li>
-            <a class="scrollTo" data-scrollTo = "about-me" href="#">SOBRE MÍ</a>
+            <a class="scrollTo" data-scrollTo="about-me" href="#">SOBRE MÍ</a>
           </li>
           <li>
-            <a class="scrollTo" data-scrollTo = "projects" href="#">PROYECTOS</a>
+            <a class="scrollTo" data-scrollTo="projects" href="#">PROYECTOS</a>
           </li>
           <li>
-            <a class="scrollTo" data-scrollTo = "skills" href="#">SKILLS</a>
+            <a class="scrollTo" data-scrollTo="skills" href="#">SKILLS</a>
           </li>
           <li>
-            <a class="scrollTo" data-scrollTo = "contact" href="#">CONTACTO</a>
+            <a class="scrollTo" data-scrollTo="contact" href="#">CONTACTO</a>
           </li>
         </ul>
       </div>
     </nav>
   </div>
-              <ul class="sidenav" id="mobile-nav">
-                <li>
-                  <a class="scrollTo" data-scrollTo = "about-me" href="#">SOBRE MÍ</a>
-                </li>
-                <li>
-                  <a class="scrollTo" data-scrollTo = "projects" href="#">PROYECTOS</a>
-                </li>
-                <li>
-                  <a class="scrollTo" data-scrollTo = "skills" href="#">SKILLS</a>
-                </li>
-                <li>
-                  <a class="scrollTo" data-scrollTo = "contact" href="#">CONTACTO</a>
-                </li>
-              </ul>
+  <ul class="sidenav" id="mobile-nav">
+    <li>
+      <a class="scrollTo" data-scrollTo="about-me" href="#">SOBRE MÍ</a>
+    </li>
+    <li>
+      <a class="scrollTo" data-scrollTo="projects" href="#">PROYECTOS</a>
+    </li>
+    <li>
+      <a class="scrollTo" data-scrollTo="skills" href="#">SKILLS</a>
+    </li>
+    <li>
+      <a class="scrollTo" data-scrollTo="contact" href="#">CONTACTO</a>
+    </li>
+  </ul>
 
-  <div class="container main-container" >
+  <div class="main-container">
     <section id="about-me" class="portfolio-section">
-      <h2>sobre mi</h2>
-      <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt exercitationem, numquam aliquid, facere consectetur dignissimos eaque quod voluptas nisi voluptates libero? Cupiditate quibusdam reprehenderit repellendus voluptatibus, tempore possimus. Tenetur, consequuntur.
+      <div class="row" id="img">
+        <h2>¿Quien Soy Yo?</h2>
+        <div class="col s12 m6 l3">
+          <img src="./img/Leyla Ticze.JPG" alt="leyla" class="responsive-img">
+        </div>
+      </div>
+      <p class="info">
+        Soy Front End Developer, Mi nombre es Leyla Ticze y con mis 18 años. Soy una persona con capacidad de adaptabilidada , trabajo
+        en equipo; me aventuro a los encantos del mundo tech con el objetivo de desarrollar mi multiples soluciones atravez
+        del codigo .
       </p>
     </section>
     <section id="projects" class="portfolio-section">
-        <h2>proyectos</h2>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt exercitationem, numquam aliquid, facere consectetur dignissimos eaque quod voluptas nisi voluptates libero? Cupiditate quibusdam reprehenderit repellendus voluptatibus, tempore possimus. Tenetur, consequuntur.
-        </p>
+      <h2>proyectos</h2>
+      <div class="slider">
+        <ul class="slides">
+          <li>
+            <div class="card">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="img/data-dashboard.png">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">Data Dashboart
+                  <i class="material-icons right">more_vert</i>
+                </span>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">Data Dashboart
+                  <i class="material-icons right">cerrar</i>
+                </span>
+                <p>Data Dashboard se encarga conocer el progreso de las estudiantes mediante el uso de la api de Laboratoria.</p>
+                <p>
+                  <a target="_blank" href="https://ticze.github.io/lim-2018-05-bc-core-am-datadashboard/src/">This is a link</a>
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="card">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="img/haven.png">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">Haven
+                  <i class="material-icons right">more_vert</i>
+                </span>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">Haven
+                  <i class="material-icons right">cerrar</i>
+                </span>
+                <p>Haven es una red social creada y enfocada para la comunidad Feminista ; donde puedes crear y postear frases
+                  , las cuales se les puede dar votos continuos .</p>
+                <p>
+                  <a target="_blank" href="https://ticze.github.io/lim-2018-05-bc-core-am-socialnetwork/src/">This is a link</a>
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="card">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="img/markdown.png">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">Markdown
+                  <i class="material-icons right">more_vert</i>
+                </span>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">Markdown
+                  <i class="material-icons right">cerrar</i>
+                </span>
+                <p>Data Dashboard se encarga conocer el progreso de las estudiantes mediante el uso de la api de Laboratoria.</p>
+                <p>
+                  <a target="_blank" href="https://www.npmjs.com/package/md-links-leyla">This is a link</a>
+                </p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
     </section>
     <section id="skills" class="portfolio-section">
-        <h2>skills</h2>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt exercitationem, numquam aliquid, facere consectetur dignissimos eaque quod voluptas nisi voluptates libero? Cupiditate quibusdam reprehenderit repellendus voluptatibus, tempore possimus. Tenetur, consequuntur.
-        </p>
+      <h2>skills</h2>
+      <div class="container">
+        <div class="row card">
+          <div class="col s12 m6 l2">
+            <img src="img/html.png" alt="logoHTML" class="responsive-img card materialbox">
+          </div>
+          <div class="col s12 m6 l2">
+            <img src="img/js.png" alt="logoJS" class="responsive-img card materialbox">
+          </div>
+          <div class="col s12 m6 l2">
+            <img src="img/css.png" alt="logoCSS" class="responsive-img card materialbox">
+          </div>
+          <div class="col s12 m6 l2">
+            <img src="img/bootstrap-logo.png" alt="logoCSS" class="responsive-img card materialbox">
+          </div>
+          <div class="col s12 m6 l2">
+            <img src="img/materialize.jpg" alt="logoCSS" class="responsive-img card materialbox">
+          </div>
+          <div class="col s12 m6 l2">
+            <img src="img/firebase.jpg" alt="logoCSS" class="responsive-img card materialbox">
+          </div>
+          <div class="col s12 m6 l2">
+            <img src="img/node.png" alt="logoCSS" class="responsive-img card materialbox">
+          </div>
+          <div class="col s12 m6 l2">
+            <img src="img/jest.png" alt="logoCSS" class="responsive-img card materialbox">
+          </div>
+          <div class="col s12 m6 l2">
+            <img src="img/vs-code-logo.jpg" alt="logoCSS" class="responsive-img card materialbox">
+          </div>
+          <div class="col s12 m6 l2">
+            <img src="img/git.png" alt="logoCSS" class="responsive-img card materialbox">
+          </div>
+          <div class="col s12 m6 l2">
+            <img src="img/github.jpg" alt="logoCSS" class="responsive-img card materialbox">
+          </div>
+        </div>
+      </div>
     </section>
     <section id="contact" class="portfolio-section">
-        <h2>contact</h2>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt exercitationem, numquam aliquid, facere consectetur dignissimos eaque quod voluptas nisi voluptates libero? Cupiditate quibusdam reprehenderit repellendus voluptatibus, tempore possimus. Tenetur, consequuntur.
-        </p>
+      <h2>contact</h2>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt exercitationem, numquam aliquid, facere consectetur dignissimos
+        eaque quod voluptas nisi voluptates libero? Cupiditate quibusdam reprehenderit repellendus voluptatibus, tempore
+        possimus. Tenetur, consequuntur.
+      </p>
     </section>
-    <!-- <div class="row" id="img">
-      <div class="col 16 m6 s12">
-        <img src="./img/Leyla Ticze.JPG" alt="leyla" class="responsive-img">
-        <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt exercitationem, numquam aliquid, facere consectetur dignissimos eaque quod voluptas nisi voluptates libero? Cupiditate quibusdam reprehenderit repellendus voluptatibus, tempore possimus. Tenetur, consequuntur.
-          </p>
-      </div>
-    </div> -->
   </div>
-
   <div class=space></div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
   <!-- Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+  <script src="call-materialize.js"></script>
   <script src="main.js"></script>
-  <script>
-    $(document).ready(function () {
-      $(".sidenav").sidenav();
-    });
-  </script>
 
 </body>
 
