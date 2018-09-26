@@ -35,14 +35,25 @@ h2 {
   line-height: 1em;
   word-wrap: break-word;
 }
-.info_me{
-  margin-left: 20em;
+#contact {
+  background-color: #AF3E52;
 }
+spam{
+  font-family: 'Raleway', sans-serif;
+}
+p{
+  font-family: 'Kanit', sans-serif;
+}
+h1{
+  font-family: 'Acme', sans-serif;
+}
+h2{
+  font-family: 'Mali', cursive;
+} 
 .card-panel{
   width: 380px;
   margin-left: 20em;
 }
-
 .card {
   position: relative;
   margin: 0 0 2em;
