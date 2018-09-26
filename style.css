@@ -1,7 +1,6 @@
 h2 {
   margin: 0 0 30px;
 }
-
 .portfolio-section {
   padding-top: 60px;
   height: 100vh;
@@ -13,20 +12,28 @@ h2 {
     background-color: #AF3E52;
   }
 }
-
-
 @media (min-width: 640px) {
   .portfolio-section {
     padding-top: 70px;
   }
    
 }
-
 @media (min-width: 993px) {
   .portfolio-section {
     padding-top: 70px;
   }
    
+}
+.ml12 {
+  font-weight: 400;
+  font-size: 3em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+.ml12 .letter {
+  display: inline-block;
+  line-height: 1em;
+  word-wrap: break-word;
 }
 .info_me{
   margin-left: 20em;
@@ -44,6 +51,10 @@ h2 {
   width: 6em;
   height: 6em;
   margin: 3em;
+}
+.ft-me{
+  margin: 5px;
+  border-radius: 10em;
 }
 
 nav {
