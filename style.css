@@ -16,13 +16,6 @@ h2 {
   .portfolio-section {
     padding-top: 70px;
   }
-   
-}
-@media (min-width: 993px) {
-  .portfolio-section {
-    padding-top: 70px;
-  }
-   
 }
 .ml12 {
   font-weight: 400;
@@ -74,11 +67,9 @@ h2{
   margin: 5px;
   border-radius: 10em;
 }
-
 nav {
   background-color: #AF3E52;
 }
-
 .slider {
   width: 75%;
   margin: auto;
@@ -92,12 +83,6 @@ nav {
   width: 50%;
   height: 50%;
 }
-
-div.space{
-  margin-bottom:700px
-}
-
-/* added 1/24/17 */
 .active{
   font-weight: 700;
 }
