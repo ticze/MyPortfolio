@@ -28,9 +28,6 @@ h2 {
   line-height: 1em;
   word-wrap: break-word;
 }
-#contact {
-  background-color: #AF3E52;
-}
 spam{
   font-family: 'Raleway', sans-serif;
 }
@@ -43,9 +40,8 @@ h1{
 h2{
   font-family: 'Mali', cursive;
 } 
-.card-panel{
-  width: 380px;
-  margin-left: 20em;
+.img.responsive-img {
+  max-width: 15rem;
 }
 .card {
   position: relative;
@@ -66,6 +62,7 @@ h2{
 .ft-me{
   margin: 5px;
   border-radius: 10em;
+  max-width: 15rem !important;
 }
 nav {
   background-color: #AF3E52;
@@ -85,4 +82,10 @@ nav {
 }
 .active{
   font-weight: 700;
+}
+
+@media only screen and (max-width: 740px) {
+  .ft-me-container {
+    width: 100%;
+  }
 }
