@@ -17,18 +17,7 @@ h2 {
     padding-top: 70px;
   }
 }
-.ml12 {
-  font-weight: 400;
-  font-size: 3em;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-}
-.ml12 .letter {
-  display: inline-block;
-  line-height: 1em;
-  word-wrap: break-word;
-}
-spam{
+span{
   font-family: 'Raleway', sans-serif;
 }
 p{
@@ -87,5 +76,15 @@ nav {
 @media only screen and (max-width: 740px) {
   .ft-me-container {
     width: 100%;
+  }
+}
+
+.card .card-image img {
+  height: 20em;
+}
+
+@media only screen and (min-width: 993px){
+  .row .col.l4 {
+    width: 50%;
   }
 }
