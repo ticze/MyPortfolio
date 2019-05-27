@@ -1,90 +1,142 @@
-h2 {
-  margin: 0 0 30px;
-}
-.portfolio-section {
-  padding-top: 60px;
-  height: 100vh;
-}
-@media (min-width: 992px){
-  hr {
-    width: 100%;
-    height: 5px;
-    background-color: #AF3E52;
-  }
-}
-@media (min-width: 640px) {
-  .portfolio-section {
-    padding-top: 70px;
-  }
-}
-span{
-  font-family: 'Raleway', sans-serif;
-}
-p{
-  font-family: 'Kanit', sans-serif;
-}
-h1{
-  font-family: 'Acme', sans-serif;
-}
-h2{
-  font-family: 'Mali', cursive;
-} 
-.img.responsive-img {
-  max-width: 15rem;
-}
-.card {
-  position: relative;
-  margin: 0 0 2em;
-  background: #fff;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
-  border-bottom: 1px solid #DFDFDF;
-  border-radius: 2px;
-  overflow: hidden;
-  -webkit-transform: translate3d(0px, 0px, 0px);
-  transition: all 0.3s ease-out;
-}
-.imgSkills{
-  width: 6em;
-  height: 6em;
-  margin: 3em;
-}
-.ft-me{
-  margin: 5px;
-  border-radius: 10em;
-  max-width: 15rem !important;
-}
-nav {
-  background-color: #AF3E52;
-}
-.slider {
-  width: 75%;
-  margin: auto;
-}
-.info{
-  width: 50%;
+body,* {
   margin: 0%;
   padding: 0%;
+  line-height: 1.2;
 }
-.carousel .carousel-item {
+
+.navbar {
+  z-index: 9999;
+  background-color: rgb(158, 132, 135);
+  opacity: .8;
+  box-shadow: 0px 5px 15px rgb(158, 132, 135);
+  position: fixed;
+  width: 100vw;
+} 
+
+#banner_perfil{
+  display: flex;
+  background-image: url(source/sunset-1687168_1280.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  opacity: 0.8;
+  width: 100%;
+  min-height: 100vh;
+}
+#perfil{
+  padding: 35px;
+  transition: all 0.35s ease-in-out;
+        
+}
+
+.full_name, .title{
+  opacity: 0.8;
+  margin: auto;
+  width: 550px;
+  height: auto;
+}
+
+.ocupation{
+  font-family: 'Raleway', sans-serif;
+  font-size: 45px;
+} 
+h1, h2{
+  color: white;
+  font-size: 80px;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;  
+  margin: 0;
+  padding: 0;
+}
+.content_parrafo{
+  text-align: center;
+  padding: 30px;
+}
+.descripcion{   
+  padding: 5px 100px 5px 100px;
   width: 50%;
-  height: 50%;
+  margin: auto;
 }
-.active{
-  font-weight: 700;
+.frase{
+  margin: 0;
+  padding: 5px;
 }
-
-@media only screen and (max-width: 740px) {
-  .ft-me-container {
-    width: 100%;
+@media only screen and (max-width: 440px) {
+  .descripcion{      
+    width: 100%; 
+    margin: auto;
+    padding: 0;
+  }
+  .frase{
+    padding-left: 0;
+    padding-right: 0px;
+  }
+  h2{
+    font-size: 2rem;
   }
 }
 
-.card .card-image img {
-  height: 20em;
-}
 
-@media only screen and (min-width: 993px){
-  .row .col.l4 {
-    width: 50%;
-  }
+#banner_portafolio{
+  display: flex;
+  background-image: url(source/dawn-3723205_1280.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.8;
+  width: 100%;
+  min-height: 30vh;
+}
+#portafolio{
+  padding: 10px;
+}
+#banner_contact{
+  display: flex;
+  background-image: url(source/paper-3316268_1280.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.8;
+  width: 100%;
+  min-height: 30vh;
+}
+#contact{
+  min-height: 10vh;
+}
+.pie_pag{
+  margin: 0;
+  padding-bottom: 5px;
+}
+.list-group-item {
+  border: 0px ;
+  color: #c3c3c3;
+  font-family: 'Open Sans', sans-serif;
+}
+.titulo{
+  color: #000000;
+} 
+
+.borderCard{
+  height: 320px;
+  padding: 20px 60px 20px 60px;
+  text-align: justify;
+}
+.borderCard p, a{
+  padding: 20px 60px 20px 60px;
+}
+.txt1{
+  overflow: hidden;
+  transform: translate3d(0px, 0%, 0px);
+  opacity: 1;
+  display: inline-block;
+}
+.col-lg-6.borderCardImg {
+  height: 320px;
+  background-image: url(https://fotos.subefotos.com/a5bc817467010a120a9a3c5ef0336707o.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
